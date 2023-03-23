@@ -9,6 +9,9 @@ const options = {
     tooltip:{},
     legend: {
         data: ["dummy"]
+    },
+    xAxis: {
+        data: []
     }
 };
 
