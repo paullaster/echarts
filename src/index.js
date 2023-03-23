@@ -44,8 +44,16 @@ const options = {
         data: ["dummy"]
     },
     xAxis: {
-        data: []
-    }
+        data: dataFromApi.map(d => d.user_id)
+    },
+    yAxis: {},
+    series: [
+        {
+            name: "% of activities by user per day",
+            type: "bar",
+            data: dataFromApi.map(d => (d.activities / d.total_ativities) * 100)
+        }
+    ]
 };
 
 chart.setOption(options);
