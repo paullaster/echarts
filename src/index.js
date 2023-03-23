@@ -49,7 +49,7 @@ const options = {
     yAxis: {},
     series: [
         {
-            name: "% of activities by user per day",
+            name: dataFromApi.map(d => d.day),
             type: "bar",
             data: dataFromApi.map(d => (d.activities / d.total_ativities) * 100)
         }
