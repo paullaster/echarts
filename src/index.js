@@ -1,4 +1,4 @@
-import * as echarts from "echartts";
+import * as echarts from "echarts";
 
 const chart = echarts.init(document.getElementById("myCharts"));
 
